@@ -19,7 +19,7 @@ This project models the cradle-to-retail carbon footprint of a selected Danone p
 ## Getting Started
 ```bash
 # clone repo
-git clone https://github.com/YOURUSERNAME/danone-esg-case-study.git
+git clone https://github.com/DeLorch107/danone-esg-case-study.git
 cd danone-esg-case-study
 
 # create virtual environment
