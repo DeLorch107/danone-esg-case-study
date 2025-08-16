@@ -102,6 +102,7 @@ Distribution modeled for the **Île-de-France region**.
 
 <div align="center">
 <sub>
-🌱 <em>Part of Danone's commitment to Science Based Targets</em> 🌱
+📈 <em>Academic project for Supply Chain Management career development</em> 📈<br>
+<em>⚠️ This is a hypothetical case study for educational purposes only</em>
 </sub>
 </div>
