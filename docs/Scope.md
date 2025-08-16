@@ -2,11 +2,11 @@
 
 - ## SKU  
   Danone Velouté Nature 125 g (local French variant), produced at Danone’s French network with **Ferrières-en-Bray** as the representative production site supplying the Île-de-France region.  
-  ![](images/veloute_nature.png)
+  ![](../images/veloute_nature.png)
 
 - ## Geography  
   Distribution modeled for the Île-de-France region.  
-  ![](images/ile_de_France.jpg)
+  ![](../images/ile_de_France.jpg)
 
 - ## System Boundaries  
   Cradle-to-retail greenhouse-gas emissions.
