@@ -18,7 +18,7 @@
 Produced at Danone's French network with **🏭 Ferrières-en-Bray** as the representative production site supplying the Île-de-France region.
 
 <div align="center">
-<img src="../images/veloute_nature.png" alt="Velouté Nature" width="200"/>
+<img src="../../images/veloute_nature.png" alt="Velouté Nature" width="200"/>
 </div>
 
 ---
@@ -28,7 +28,7 @@ Produced at Danone's French network with **🏭 Ferrières-en-Bray** as the repr
 Distribution modeled for the **Île-de-France region**.
 
 <div align="center">
-<img src="../images/ile_de_France.jpg" alt="Île-de-France map" width="300"/>
+<img src="../../images/ile_de_France.jpg" alt="Île-de-France map" width="300"/>
 </div>
 
 ---
