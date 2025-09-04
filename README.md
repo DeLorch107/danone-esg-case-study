@@ -1,4 +1,4 @@
-![Python](https://img.shields.io/badge/Python-3.8+-blue) ![LCA](https://img.shields.io/badge/LCA-GHG%20Protocol-green) ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+<div align=center>![Python](https://img.shields.io/badge/Python-3.8+-blue) ![LCA](https://img.shields.io/badge/LCA-GHG%20Protocol-green) ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)</div>
 
 # Danone Yogurt LCA - Carbon Footprint Analysis
 *Cradle-to-retail emissions assessment with reduction scenarios*
