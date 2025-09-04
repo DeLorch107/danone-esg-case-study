@@ -29,7 +29,9 @@ Distribution modeled for the **Île-de-France region**.
 
 <div align="center">
   <img src="../../images/ile_de_France.jpg" alt="Île-de-France map" width="300"/>
+  <p style="font-size:11 px , font-family: Courier New, color: #DCDCDC"></p>
 </div>
+
 
 ---
 
