@@ -1,3 +1,5 @@
+![Python](https://img.shields.io/badge/Python-3.8+-blue) ![LCA](https://img.shields.io/badge/LCA-GHG%20Protocol-green) ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+
 # Danone Yogurt LCA - Carbon Footprint Analysis
 *Cradle-to-retail emissions assessment with reduction scenarios*
 
@@ -32,8 +34,6 @@ Produce a reproducible, transparent cradle-to-retail carbon model for a Danone y
 - Treat estimates as decision-support scenarios, not audit-grade accounting.
 
 **Intended audience:** sustainability analysts, hiring managers, recruiters, and anyone evaluating methodology for food-product LCAs.
-
-![Python](https://img.shields.io/badge/Python-3.8+-blue) ![LCA](https://img.shields.io/badge/LCA-GHG%20Protocol-green) ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
 **Key Result:** [Results will be added upon completion]
 
