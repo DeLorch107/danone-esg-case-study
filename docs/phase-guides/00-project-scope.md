@@ -27,11 +27,12 @@ Produced at Danone's French network with **🏭 Ferrières-en-Bray** as the repr
 
 Distribution modeled for the **Île-de-France region**.
 
-<figure align="center">
+<div align="center">
+<figure>
   <img src="../../images/ile_de_France.jpg" alt="Île-de-France map" width="300"/>
   <figcaption> Image from: https://www.britannica.com/place/Ile-de-France-region-France </figcaption>
 </figure>
-
+</div>
 ---
 
 ## 🎯 System Boundaries
