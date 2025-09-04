@@ -1,6 +1,38 @@
 # Danone Yogurt LCA - Carbon Footprint Analysis
 *Cradle-to-retail emissions assessment with reduction scenarios*
 
+## Project Overview
+
+**What this repo is.** A reproducible cradle-to-retail LCA case study for a Danone yogurt SKU (150 g, France/EU) built with public data (Danone reports, AGRIBALYSE / ecoinvent, DEFRA). The goal: compute a defensible baseline footprint (kgCO₂e per SKU), model 4–6 practical reduction levers, estimate abatement potential and €/tCO₂e, and deliver a small investor-style package (10–12 slide deck + one-page KPI PDF + GitHub repo with runnable notebooks and documented assumptions).
+
+**Quick truth:** this is a public-data case study — not internal Danone procurement data. Expect proxies and documented assumptions; the value is in methodology, reproducibility, sensitivity analysis, and clear communication of uncertainties.
+
+## Project Goal & Success Criteria
+
+### Goal
+Produce a reproducible, transparent cradle-to-retail carbon model for a Danone yogurt SKU (150 g, France/EU) that translates public LCA datasets and company disclosures into actionable mitigation insight. Deliverables are aimed at both technical reproducibility (notebooks + data + assumptions) and high-level decision making (abatement curve, top recommendations, cost/impact tradeoffs).
+
+### Core Objectives
+- **Reproducible baseline:** single-number headline (kgCO₂e / SKU) with documented inputs and a 90% confidence interval or sensitivity bands.
+- **Scenario analysis:** 4–6 realistic levers (energy, farm/supply, packaging, logistics, combination) with tCO₂e avoided and implementation notes.
+- **Financial lens:** €/tCO₂e for each lever (range estimates), order-of-magnitude CAPEX/OPEX and payback where possible.
+- **Deliverables:** runnable notebooks, `assumptions.md`, `data_sources.md`, 10–12 slide deck, one-page KPI PDF, and a polished `README`.
+- **Reproducibility:** notebooks run end-to-end on public proxies; all data sources and transforms logged.
+
+### Success Criteria (what “done” looks like)
+- Notebooks execute from raw CSV → final charts without manual edits.
+- `assumptions.md` lists every proxy with high/base/low values.
+- Baseline footprint reported with uncertainty (± range or MC output).
+- Abatement curve completed with €/tCO₂e for each lever and a transparent cost-source for each number.
+- A concise deck + one-pager suitable for a hiring manager / sustainability reviewer.
+- GitHub repo is tidy, versioned, and contains `README`, `requirements.txt`, and example data.
+
+### Limitations & expected caveats
+- Results are illustrative and depend strongly on ingredient origin and farm-level data; do **not** claim corporate-level accuracy.
+- Treat estimates as decision-support scenarios, not audit-grade accounting.
+
+**Intended audience:** sustainability analysts, hiring managers, recruiters, and anyone evaluating methodology for food-product LCAs.
+
 ![Python](https://img.shields.io/badge/Python-3.8+-blue) ![LCA](https://img.shields.io/badge/LCA-GHG%20Protocol-green) ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
 **Key Result:** [Results will be added upon completion]
