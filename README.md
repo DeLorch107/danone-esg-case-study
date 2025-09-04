@@ -1,81 +1,22 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8+-blue" />
-  <img src="https://img.shields.io/badge/LCA-GHG%20Protocol-green" />
-  <img src="https://img.shields.io/badge/Status-In%20Progress-yellow" />
-</p>
-
 # Danone Yogurt LCA - Carbon Footprint Analysis
-*Cradle-to-retail emissions assessment with reduction scenarios*
 
-## Project Overview
+A reproducible cradle-to-retail life cycle assessment (LCA) case study for Danone yogurt, built with publicly available data to model emissions and evaluate reduction scenarios.
 
-**What this repo is.** A reproducible cradle-to-retail LCA case study for a Danone yogurt SKU (150 g, France/EU) built with public data (Danone reports, AGRIBALYSE / ecoinvent, DEFRA). The goal: compute a defensible baseline footprint (kgCO₂e per SKU), model 4–6 practical reduction levers, estimate abatement potential and €/tCO₂e, and deliver a small investor-style package (10–12 slide deck + one-page KPI PDF + GitHub repo with runnable notebooks and documented assumptions).
+## Overview
 
-**Quick truth:** this is a public-data case study — not internal Danone procurement data. Expect proxies and documented assumptions; the value is in methodology, reproducibility, sensitivity analysis, and clear communication of uncertainties.
+This repository contains a transparent carbon footprint model for a 150g Danone yogurt SKU (France/EU market), using public data sources including Danone sustainability reports, AGRIBALYSE/ecoinvent databases, and DEFRA emission factors. The analysis computes baseline emissions (kgCO₂e per SKU), models 4-6 practical reduction levers, and estimates their abatement potential with associated costs.
 
-## Project Goal & Success Criteria
+**Note:** This is a methodological case study using public data proxies, not internal Danone procurement data. Results are illustrative and intended to demonstrate LCA methodology and scenario analysis capabilities.
 
-### Goal
-Produce a reproducible, transparent cradle-to-retail carbon model for a Danone yogurt SKU (150 g, France/EU) that translates public LCA datasets and company disclosures into actionable mitigation insight. Deliverables are aimed at both technical reproducibility (notebooks + data + assumptions) and high-level decision making (abatement curve, top recommendations, cost/impact tradeoffs).
+## Project Objectives
 
-### Core Objectives
-- **Reproducible baseline:** single-number headline (kgCO₂e / SKU) with documented inputs and a 90% confidence interval or sensitivity bands.
-- **Scenario analysis:** 4–6 realistic levers (energy, farm/supply, packaging, logistics, combination) with tCO₂e avoided and implementation notes.
-- **Financial lens:** €/tCO₂e for each lever (range estimates), order-of-magnitude CAPEX/OPEX and payback where possible.
-- **Deliverables:** runnable notebooks, `assumptions.md`, `data_sources.md`, 10–12 slide deck, one-page KPI PDF, and a polished `README`.
-- **Reproducibility:** notebooks run end-to-end on public proxies; all data sources and transforms logged.
+- **Baseline Assessment:** Calculate single-SKU carbon footprint with documented confidence intervals
+- **Scenario Modeling:** Analyze 4-6 realistic reduction levers across energy, supply chain, packaging, and logistics
+- **Financial Analysis:** Estimate €/tCO₂e abatement costs with CAPEX/OPEX considerations
+- **Reproducibility:** Provide fully executable notebooks with transparent assumptions and data sources
 
-### Success Criteria (what “done” looks like)
-- Notebooks execute from raw CSV → final charts without manual edits.
-- `assumptions.md` lists every proxy with high/base/low values.
-- Baseline footprint reported with uncertainty (± range or MC output).
-- Abatement curve completed with €/tCO₂e for each lever and a transparent cost-source for each number.
-- A concise deck + one-pager suitable for a hiring manager / sustainability reviewer.
-- GitHub repo is tidy, versioned, and contains `README`, `requirements.txt`, and example data.
+## Quick Start
 
-### Limitations & expected caveats
-- Results are illustrative and depend strongly on ingredient origin and farm-level data; do **not** claim corporate-level accuracy.
-- Treat estimates as decision-support scenarios, not audit-grade accounting.
-
-**Intended audience:** sustainability analysts, hiring managers, recruiters, and anyone evaluating methodology for food-product LCAs.
-
-**Key Result:** [Results will be added upon completion]
-
-## 🔍 **[READ THE METHODOLOGY](METHODOLOGY.md)** 📋
-*Complete LCA approach following GHG Protocol standards*
-
----
-
-## 🗺️ Quick Navigation
-| Section | Description | Time to Read |
-|---------|-------------|--------------|
-| [**📊 Key Results**](#-key-results) | Main findings & visuals | 2 min |
-| [**🛠️ Run Analysis**](#-run-analysis) | Clone & reproduce | 5 min |
-| [**📚 Methodology**](METHODOLOGY.md) | Technical approach | 10 min |
-| [**📁 Project Structure**](#-project-structure) | Repo organization | 1 min |
-
----
-
-## 📊 Key Results
-
-![Emissions Breakdown](images/results/sankey_baseline.png)
-*[Baseline emissions chart will be added here]*
-
-### Reduction Scenarios
-![Abatement Curve](images/results/abatement_curve.png)
-
-**Top 3 Recommendations:**
-1. [Recommendation 1 - impact and cost data pending]
-2. [Recommendation 2 - impact and cost data pending]
-3. [Recommendation 3 - impact and cost data pending]
-
-> 📖 **Details:** Full analysis methodology in [METHODOLOGY.md](METHODOLOGY.md)
-
----
-
-## 🛠️ Run Analysis
-
-### Quick Start
 ```bash
 git clone https://github.com/DeLorch107/danone-esg-case-study
 cd danone-esg-case-study
@@ -83,106 +24,131 @@ pip install -r requirements.txt
 jupyter lab notebooks/
 ```
 
-### Key Notebooks
-- `01_data_cleaning.ipynb` - Data preparation
-- `02_baseline_emissions.ipynb` - LCA calculations  
-- `03_scenarios.ipynb` - Reduction scenarios
-- `04_financial_analysis.ipynb` - Abatement costs
+### Key Analysis Notebooks
 
----
+1. `01_data_cleaning.ipynb` - Data preparation and validation
+2. `02_baseline_emissions.ipynb` - LCA calculations and baseline model
+3. `03_scenarios.ipynb` - Reduction scenario development
+4. `04_financial_analysis.ipynb` - Abatement cost analysis
 
-## 🎯 Project Scope
+## Methodology
 
-**Product:** Danone set yogurt, 150g pot (France/EU)  
-**Boundary:** Cradle-to-retail  
-**Baseline Year:** 2020  
-**Methodology:** GHG Protocol + AGRIBALYSE
+The analysis follows GHG Protocol standards for Scope 3 accounting and uses a cradle-to-retail system boundary. For detailed methodology, see [METHODOLOGY.md](METHODOLOGY.md).
 
-> 📋 **Complete scope definition:** [Phase 0 - Project Scope](docs/phase-guides/00-project-scope.md)
+### Scope Definition
 
----
+- **Product:** Danone set yogurt, 150g pot (France/EU)
+- **System Boundary:** Cradle-to-retail (excludes consumer use and disposal)
+- **Baseline Year:** 2020
+- **Impact Category:** Climate change (kgCO₂e)
+- **Allocation Method:** Mass-based for multi-output processes
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 danone-esg-case-study/
-├── 📖 METHODOLOGY.md           # Technical approach
-├── 📊 notebooks/               # Interactive analysis
-├── 📁 data/                   # Datasets & emission factors
-├── 🖼️ images/                  # Charts & diagrams
-├── 📋 docs/phase-guides/       # Step-by-step guides
-├── 💻 src/                     # Reusable Python functions
-└── 📈 outputs/                 # Final deliverables
+├── METHODOLOGY.md              # Complete technical approach
+├── notebooks/                  # Jupyter notebooks for analysis
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_baseline_emissions.ipynb
+│   ├── 03_scenarios.ipynb
+│   └── 04_financial_analysis.ipynb
+├── data/                       
+│   ├── raw/                   # Original data files
+│   ├── processed/             # Cleaned datasets
+│   └── emission_factors/      # LCA databases
+├── src/                        # Python modules
+│   ├── lca_calculator.py
+│   ├── scenario_builder.py
+│   └── visualization.py
+├── docs/
+│   ├── assumptions.md         # Modeling assumptions
+│   ├── data-sources.md        # Data references
+│   └── phase-guides/          # Step-by-step documentation
+└── outputs/                    # Final deliverables
+    ├── presentation/
+    └── kpi_summary.pdf
 ```
 
----
+## Key Results
 
-## 🛠️ Technical Stack
+### Baseline Emissions
+[Results pending - will include emissions breakdown by life cycle stage]
 
-**LCA Data Sources:**
-- AGRIBALYSE (French food LCA database)
-- ecoinvent (Global LCI datasets)
-- DEFRA emission factors
+### Reduction Scenarios
 
-**Analysis Tools:**
-- Python: pandas, numpy, matplotlib, plotly
-- Jupyter notebooks
-- GitHub
+| Scenario | Abatement Potential | Cost (€/tCO₂e) | Implementation Complexity |
+|----------|-------------------|----------------|-------------------------|
+| Renewable Energy | TBD | TBD | Medium |
+| Regenerative Agriculture | TBD | TBD | High |
+| Packaging Optimization | TBD | TBD | Low |
+| Transport Efficiency | TBD | TBD | Medium |
 
-**Standards:**
-- GHG Protocol Scope 3 guidance
-- GLEC framework for logistics emissions
+### Top Recommendations
+1. [To be completed based on analysis results]
+2. [To be completed based on analysis results]
+3. [To be completed based on analysis results]
 
----
+## Data Sources
 
-## 📈 Key Findings Summary
+- **AGRIBALYSE v3.1** - French environmental database for agricultural products
+- **ecoinvent v3.8** - Global life cycle inventory database
+- **DEFRA 2023** - UK Government emission factors
+- **Danone Reports** - Public sustainability disclosures (2020-2023)
+- **GLEC Framework** - Logistics emissions methodology
 
-| Metric | Baseline | Best Case | Reduction |
-|--------|----------|-----------|-----------|
-| **Total Emissions** | [TBD] | [TBD] | [TBD] |
-| **Ingredient Impact** | [TBD] | [TBD] | [TBD] |
-| **Packaging Impact** | [TBD] | [TBD] | [TBD] |
-| **Energy Impact** | [TBD] | [TBD] | [TBD] |
+Full data source documentation: [data-sources.md](docs/data-sources.md)
 
-**Implementation Cost:** [Results pending]  
-**Timeline:** [Results pending]
+## Technical Requirements
 
----
+- Python 3.8+
+- pandas, numpy for data processing
+- matplotlib, plotly for visualization
+- jupyter for interactive notebooks
 
-## 📚 Documentation
+See `requirements.txt` for complete dependencies.
 
-### Core Documentation
-- **[METHODOLOGY.md](METHODOLOGY.md)** - Complete LCA methodology & calculations
-- **[assumptions.md](docs/assumptions.md)** - All modeling assumptions
-- **[data-sources.md](docs/data-sources.md)** - Data source references
+## Documentation
 
-### Phase-by-Phase Guides
+### Core Documents
+- [METHODOLOGY.md](METHODOLOGY.md) - Complete LCA methodology
+- [assumptions.md](docs/assumptions.md) - All modeling assumptions with sensitivity ranges
+- [data-sources.md](docs/data-sources.md) - Data provenance and quality assessment
+
+### Phase Guides
+Detailed implementation guides for each project phase:
 - [Phase 0: Project Scope](docs/phase-guides/00-project-scope.md)
-- [Phase 1: Data Collection](docs/phase-guides/01-data-collection.md)  
+- [Phase 1: Data Collection](docs/phase-guides/01-data-collection.md)
 - [Phase 2: Baseline Model](docs/phase-guides/02-baseline-model.md)
 - [Phase 3: Scenario Development](docs/phase-guides/03-scenario-development.md)
 - [Phase 4: Financial Analysis](docs/phase-guides/04-financial-analysis.md)
 - [Phase 5: Uncertainty & Validation](docs/phase-guides/05-uncertainty-validation.md)
 - [Phase 6: Deliverables](docs/phase-guides/06-deliverables.md)
 
----
+## Deliverables
 
-## 🎯 Final Deliverables
+- **Executive Presentation:** 10-12 slide deck with key findings and recommendations
+- **KPI Summary:** One-page dashboard with baseline and scenario results
+- **Technical Repository:** This GitHub repo with reproducible analysis
+- **Interactive Notebooks:** Step-by-step calculations with visualizations
 
-- 📊 [Presentation](outputs/presentation/) - [To be completed]
-- 📋 [KPI summary](outputs/kpi_summary.pdf) - [To be completed]
-- 💻 Reproducible Python analysis
-- 📈 Interactive Jupyter notebooks
+## Limitations
 
----
+- Results based on public data proxies, not actual supplier data
+- Uncertainty inherent in agricultural emission factors (±30-50%)
+- Cost estimates are order-of-magnitude approximations
+- Excludes consumer use phase and end-of-life emissions
 
-## 👤 Contact
+## Contact
 
 **Ibrahim ELORCH**  
-📧 ibrahim.elorch@emines.um6p.ma  
-🔗 [LinkedIn](https://www.linkedin.com/in/ibrahim-elorch-6879782ba/)
+Email: ibrahim.elorch@emines.um6p.ma  
+LinkedIn: [Ibrahim Elorch](https://www.linkedin.com/in/ibrahim-elorch-6879782ba/)
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details
 
 ---
 
-## 📄 License
-MIT License - see [LICENSE](LICENSE) file for details
+*This project demonstrates LCA methodology for food products using public data. Results should not be interpreted as official Danone product footprints.*
